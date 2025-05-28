@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Evento Anual 2025 - Edición Cereza</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="u-antialiased">
+
+    <header class="s-header">
+        <div class="o-container s-header__contenido">
+            <div class="s-header__logo">
+                <a href="#">TestLab</a>
+            </div>
+            <nav class="s-header__nav u-oculto-movil">
+                <ul>
+                    <li><a href="#detalles" class="is-active">Detalles</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#registro">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="detalles" class="s-hero u-py-20">
+            <div class="o-container u-text-center">
+                <h1 class="s-hero__titulo">Gran Evento Anual  TestLab 2025</h1>
+                <p class="s-hero__subtitulo">Únete a nosotros para tres días de aprendizaje y descubrimiento. ¡La experiencia que transformará tu perspectiva profesional!</p>
+                <a href="#registro" class="c-boton c-boton--primario c-boton--grande">Regístrate Ahora</a>
+            </div>
+        </section>
+
+        <section class="u-py-16">
+            <div class="o-container">
+                <h2 class="s-titulo-seccion u-text-center">¿Qué esperar del Evento?</h2>
+                <div class="o-grid o-grid-cols-1 md:o-grid-cols-3 o-gap-8">
+                    <div class="c-card">
+                        <h3 class="c-card__titulo">Charlas Inspiradoras</h3>
+                        <p class="c-card__texto">Expertos de la industria compartirán sus conocimientos y visiones sobre las últimas tendencias.</p>
+                    </div>
+                    <div class="c-card">
+                        <h3 class="c-card__titulo">Networking de Calidad</h3>
+                        <p class="c-card__texto">Conecta con profesionales, líderes y pioneros en tu campo. Amplía tu red de contactos.</p>
+                    </div>
+                    <div class="c-card">
+                        <h3 class="c-card__titulo">Talleres Prácticos</h3>
+                        <p class="c-card__texto">Participa en sesiones interactivas y adquiere nuevas habilidades aplicables a tu trabajo diario.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="s-testimonios u-py-16">
+            <div class="o-container">
+                <h2 class="s-testimonios__titulo-seccion u-text-center">Lo que dicen nuestros asistentes</h2>
+                
+                <div class="c-carrusel">
+                    <input type="radio" name="carrusel" id="carrusel-control-1" class="c-carrusel__control" checked>
+                    <input type="radio" name="carrusel" id="carrusel-control-2" class="c-carrusel__control">
+                    <input type="radio" name="carrusel" id="carrusel-control-3" class="c-carrusel__control">
+
+                    <div class="c-carrusel__contenedor">
+                        <div class="c-carrusel__diapositiva">
+                            <div class="c-testimonial">
+                                <p class="c-testimonial__texto">Una experiencia increíblemente enriquecedora. Las exposiciones fueron de primer nivel y el ambiente inmejorable.</p>
+                                <p class="c-testimonial__autor">Ana Pérez</p>
+                                <p class="c-testimonial__cargo">Desarrolladora Frontend</p>
+                            </div>
+                        </div>
+                        <div class="c-carrusel__diapositiva">
+                            <div class="c-testimonial">
+                                <p class="c-testimonial__texto">El mejor evento al que he asistido en años. Hice contactos muy valiosos y aprendí muchísimo. ¡Volveré!</p>
+                                <p class="c-testimonial__autor">Carlos López</p>
+                                <p class="c-testimonial__cargo">Gerente de Proyectos</p>
+                            </div>
+                        </div>
+                        <div class="c-carrusel__diapositiva">
+                            <div class="c-testimonial">
+                                <p class="c-testimonial__texto">La organización fue impecable y los temas tratados muy relevantes. Totalmente recomendado.</p>
+                                <p class="c-testimonial__autor">Sofía Ramírez</p>
+                                <p class="c-testimonial__cargo">Diseñadora UX/UI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c-carrusel__navegacion">
+                        <label for="carrusel-control-1" class="c-carrusel__nav-dot" title="Testimonio 1"></label>
+                        <label for="carrusel-control-2" class="c-carrusel__nav-dot" title="Testimonio 2"></label>
+                        <label for="carrusel-control-3" class="c-carrusel__nav-dot" title="Testimonio 3"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="registro" class="s-registro u-py-16">
+            <div class="o-container">
+                <div class="s-registro__contenedor-formulario">
+                    <h2 class="s-registro__titulo-seccion u-text-center">¡No te quedes fuera! Regístrate</h2>
+                    <form id="formRegistro" class="c-formulario" action="#" method="POST"> <div class="c-formulario__grupo">
+                            <label for="nombre" class="c-formulario__etiqueta">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" class="c-formulario__campo" placeholder="Ej: Maria Rodriguez" required>
+                            <p class="c-formulario__mensaje-error">Este campo es obligatorio.</p>
+                        </div>
+                        <div class="c-formulario__grupo">
+                            <label for="email" class="c-formulario__etiqueta">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" class="c-formulario__campo" placeholder="Ej: maria@ejemplo.com" required>
+                             <p class="c-formulario__mensaje-error">Introduce un correo válido.</p>
+                        </div>
+                        <div class="c-formulario__grupo">
+                            <label for="tipoTicket" class="c-formulario__etiqueta">Tipo de entrada:</label>
+                            <select id="tipoTicket" name="tipoTicket" class="c-formulario__campo" required>
+                                <option value="" disabled selected>Selecciona una opción...</option>
+                                <option value="general">Acceso General - $50.000</option>
+                                <option value="vip">Acceso VIP - $120.000</option>
+                                <option value="estudiante">Estudiante - $25.000 (Requiere carnet)</option>
+                            </select>
+                            <p class="c-formulario__mensaje-error">Selecciona un tipo de entrada.</p>
+                        </div>
+                        <button type="submit" class="c-boton c-boton--primario u-w-full">Enviar Registro</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="s-footer u-py-8">
+        <div class="o-container u-text-center">
+            <p>&copy; 2025 TestLab. Todos los derechos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a>
+            </p>
+            <div class="s-footer__redes">
+                <a href="#" title="Facebook" aria-label="Facebook de EventoMax">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.04C6.48 2.04 2 6.52 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.81C10.44 7.31 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10.01 10.01 0 0 0 22 12.06C22 6.52 17.52 2.04 12 2.04Z"/></svg>
+                </a>
+                <a href="#" title="Twitter / X" aria-label="Twitter de EventoMax">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" title="Instagram" aria-label="Instagram de EventoMax">
+                    <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8c1.99 0 3.6-1.61 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    </body>
+</html>
